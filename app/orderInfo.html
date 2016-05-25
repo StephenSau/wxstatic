@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>企业服务领航者-壹财税</title>
+    <meta name="keywords" content="..." />
+    <meta name="description" content="..." />
+    <link rel="stylesheet" type="text/css" href="../public/css/orderInfo.css" />
+</head>
+<body>
+    <div class="header">
+       <div class="cframe">
+        <h2><img src="../public/img/logo.png" width="45" alt="壹财税"/></h2>
+        <p>企业服务领航者</p>
+        </div>
+    </div>
+    <h2 class="ptitle">订单详情</h2>
+    <div class="orderInfo cframe">
+    	<form action="">
+    	<p class="oi_no">
+    		<span>订单号：1509312222A</span>
+    		<strong>待确认</strong>
+    	</p>
+    	<p class="oi_place">服务区域：广东省广州市天河区</p>
+    	<h1 class="oi_name">个体工商户注册</h1>
+    	<h2 class="oi_title">服务项：个体户工商注册</h2>
+    	<ul class="oi_list">
+    		<li>
+                单选标题：单选选项      
+            </li>
+            <li>多选选项：多选选项1；多选选项2；多选选项3；多选选项4；多选选项5；多选选项6；</li>
+    	</ul>
+        <!--待确认状态-->
+        <p class="oi_serviceBtnLine">
+            <a href="javascript:;" id="oi_serviceBtn" class="btn btn_unneed">修改服务规格</a>
+        </p>
+        
+    	<p class="oi_total">
+    		<label for="total">总价</label>
+            <span>
+        		<input type="text" name="" id="total" value="400.00" />
+        		<em>元</em>
+            </span>
+    	</p>
+    	<!--待确认状态-->
+    	<!--待启动，服务中，已完成，已确认状态-->
+    	<p class="oi_total">
+    		<label for="total">总价</label>
+            <span>
+        		<input type="text" name="" disabled id="total" value="400.00" maxlength="9" />
+        		<em>元</em>
+            </span>
+    	</p>
+    	<!--服务中状态-->
+    	<div class="oi_serviceList" id="oi_serviceList">
+    		<h2>服务跟踪：个体户工商注册</h2>
+    		<div class="ois_content">
+	    		<table>
+	    			<tr>
+	    				<td class="active"><i>1</i>服务跟踪：个体户工商注册</td>
+	    			</tr>
+	    			<tr>
+	    				<td>完成时间：2015-10-16  16:47:23</td>
+	    			</tr>
+	    			<tr>
+	    				<td class="active"><i>2</i>办理营业执照</td>
+	    			</tr>
+	    			<tr>
+	    				<td>完成时间：2015-10-16  16:47:23</td>
+	    			</tr>
+	    			<tr>
+	    				<td class="noActive"><i>3</i>刻制公章</td>
+	    			</tr>
+	    			<tr>
+	    				<td></td>
+	    			</tr>
+	    			<tr>
+	    				<td class="noActive"><i>4</i>办理国、地税税务登记证及组织机构代码证</td>
+	    			</tr>
+	    			<tr>
+	    				<td></td>
+	    			</tr>
+	    		</table>
+    		</div>
+    		<h2>服务跟踪：个体户工商注册</h2>
+    		<div class="ois_content">
+	    		<table>
+	    			<tr>
+	    				<td class="active"><i>1</i>服务跟踪：个体户工商注册</td>
+	    			</tr>
+	    			<tr>
+	    				<td>完成时间：2015-10-16  16:47:23</td>
+	    			</tr>
+	    			<tr>
+	    				<td class="active"><i>2</i>办理营业执照</td>
+	    			</tr>
+	    			<tr>
+	    				<td>完成时间：2015-10-16  16:47:23</td>
+	    			</tr>
+	    			<tr>
+	    				<td class="noActive"><i>3</i>刻制公章</td>
+	    			</tr>
+	    			<tr>
+	    				<td></td>
+	    			</tr>
+	    			<tr>
+	    				<td class="noActive"><i>4</i>办理国、地税税务登记证及组织机构代码证</td>
+	    			</tr>
+	    			<tr>
+	    				<td></td>
+	    			</tr>
+	    		</table>
+    		</div>
+    	</div>
+    	<!--服务中状态-->
+    	<ul class="oi_remark">
+    		<li>
+    			<span>联系人： </span>
+    			<br>
+    			<em>张三</em>
+    			<a class="oi_phoneBtn" href="tel:1380013800"><img src="../public/img/phoneBtn2.png" width="110" /></a>
+    		</li>
+    		<li>
+    			<span>客户留言:</span>
+    			<br>
+    			<em>我们需要加急</em>
+    		</li>
+    		<li>
+    			<span>订单备注:</span>
+    			<br>
+    			<em id="oi_remark">我们需要加急我们需要加急我们需要加
+急我们需要加急</em><br>
+				<textarea name="" id="oi_remark_text" style="display:none">我们需要加急我们需要加急我们需要加
+急我们需要加急</textarea>
+				<p class="oi_remark_btnLine">
+					<button id="oi_remarkShowBtn" type="button" class="btn btn_unneed">编辑备注</button>
+					<button style="display:none" id="oi_remarkSaveBtn" type="button" class="btn btn_prompt">保存</button>
+				</p>
+    		</li>
+    	</ul>
+        <!--待确认状态-->
+    	<p class="oi_submit_line"><button type="submit" class="btn btn_warning">保存并确认</button></p>
+        <!--待确认状态-->
+    	<!--待启动状态-->
+    	<a class="startBtn" href="javascript:;">服务启动</a>
+    	<!--待启动状态-->
+    	<!--服务中，已完成，已确认状态-->
+    	<a class="returnBtn" href="#">返回订单列表</a>
+    	<!--服务中，已完成，已确认状态-->
+		</form>
+    </div>
+    <div class="oi_serviceBox" id="oi_serviceBox">
+            <div class="oi_serviceBox_inner">
+                <h2>服务项：个体工商注册</h2>
+                <ul>
+                    <li>
+                        <h3>单选标题</h3>
+                        <select name="" id="">
+                            <option value="1">单选选项1</option>
+                            <option value="2">单选选项2</option>
+                            <option value="3">单选选项3</option>
+                        </select>
+                    </li>
+                    <li>
+                        <h3>多选标题</h3>
+                        <input type="checkbox" name="optionsname" id="options_01">
+                        <label for="options_01">多选选项1</label>
+                        <br>
+                        <input type="checkbox" name="optionsname" id="options_02">
+                        <label for="options_02">多选选项2</label>
+                        <br>
+                        <input type="checkbox" name="optionsname" id="options_03">
+                        <label for="options_03">多选选项3</label>
+                        <br>
+                    </li>
+                </ul>
+                <p class="oisb_btnLine"><a id="oisb_saveBtn" href="javascript:;">保存修改</a></p>
+            </div>
+        </div>
+    <p class="footer">© 2015 1caishui.com</p>
+    <script type="text/javascript" src="../public/js/vendor/smartText.js"></script>
+    <script type="text/javascript" src="../public/js/vendor/ajax.js"></script>
+    <script type="text/javascript" src="../public/js/vendor/dialog.js"></script>
+    <script type="text/javascript" src="../public/js/orderInfo.js"></script>
+</body>
+</html>

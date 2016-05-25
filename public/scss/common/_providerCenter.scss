@@ -1,0 +1,98 @@
+@import 'common/variable';
+
+.providerCenter{
+	h1{
+		font-size: 1.0625em;
+		padding: 10px 0;
+		text-align: center;
+		color: $dgray;
+		font-weight: normal;
+	}
+
+	h2{
+		font-size: 1em;
+		font-weight: normal;
+		color: $lblue;
+		margin-bottom: 5px;
+	}
+	.order{
+		border: 1px solid $linegray;
+		border-top: 2px solid $lblue;
+		overflow: hidden;
+		margin-bottom: 15px;
+		background-color: #f7f7f7;
+		color: $mgray;
+		li{
+			float: left;
+			width:33%;
+			text-align: center;
+			
+			line-height: 1.5em;
+			border-right: 1px solid $linegray;
+			a{
+				display: block;
+				padding: 15px 0;
+				width: 100%;
+				color: $mgray;
+			}
+			&:last-child{
+				border-right: none;
+			}
+			em{
+				color: $dgray;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.summary{
+		border: 1px solid $linegray;
+		border-top: 2px solid $lblue;
+		border-bottom: none;
+		margin-bottom: 15px;
+		li{
+			border-bottom: 1px solid $linegray;
+			padding: 10px;
+			overflow: hidden;
+			span{
+				float: left;
+				color: $mgray;
+			}
+			em{
+				float: right;
+				color: $dgray;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.btnGroup{
+		overflow: hidden;
+		margin-bottom: 100px;
+		.btn{
+			width: 47%;
+			display: inline-block;
+			img{
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+			&:first-child{
+				float: left;
+				color: #1153a7;
+			}
+			&:last-child{
+				float: right;
+				color: #629500;
+			}
+		}
+	}
+	.btnLine{
+		text-align: center;
+		a{
+			color: $dgray;
+			font-size: .875em;
+			text-decoration: underline;
+		}
+	}	
+}
+

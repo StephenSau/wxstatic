@@ -1,0 +1,50 @@
+@import 'common/variable';
+.content{
+	padding: 74px 0 10px;
+}
+
+.line1{
+	margin-bottom: 20px;
+
+	img{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.line2{
+	color: $mgreen;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.line3{
+	padding: 0 2em 30px 2em;
+	text-align: center;
+	color: $dgray;
+}
+
+.line4{
+	background-color: #e3e9ed;
+	padding: 20px 33px 15px 131px;
+	min-height: 75px;
+	margin-bottom: 15px;
+	position: relative;
+	p:first-child{
+		position: absolute;
+		top: 15px;
+		left: 33px;
+	}
+	p:last-child{
+		font-size: .875em;
+		border-left: 1px solid #ffffff;
+		padding-left: 18px;
+		color: $lblue;
+	}
+}
+
+.line5{
+	font-size: .75em;
+	color: $mgray;
+	text-align: center;
+}

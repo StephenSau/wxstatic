@@ -1,0 +1,169 @@
+.mask{
+    background-color: #000000;
+    opacity: 0.6;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000
+}
+
+.dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1010;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 300px;
+    .title{
+        font-size: 1.125em;
+        display: none;
+    }
+
+    .content{
+        padding: 55px 20px 42px;
+        border-bottom: 1px solid #dddddd;
+        color: #666666;
+        line-height: 1.2em;
+        text-align: center;
+    }
+
+    .btnGroup{
+        border-top: 1px solid #f8f8f8;
+        overflow: hidden;
+        button{
+            background:none;
+            border:none;
+            height: 50px;
+            line-height: 50px;
+            outline: none;
+            width: 99.9%;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            padding: 0;
+            float: right;
+            font-size:1em;
+            cursor: pointer;
+            &:first-child{
+                color: #eb9000;
+            }
+            &:nth-child(n+2){
+                color: #666666;
+                border-right: 1px solid #dddddd;
+                margin-right: -1px;
+            }
+        }
+    }
+}
+
+.ui-info{
+    background-color: #ffffff;
+    padding: 45px 30px;
+    position: fixed;
+    z-index: 110;
+    top: 100px;
+    left: 50%;
+}
+
+.ui-info-content{
+}
+
+.ui-info-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #9e9e9e;
+    &:hover{
+        color: #DB281F;
+    }
+}
+
+.ui-info-loginBox{
+    padding: 0 50px;
+    h3{
+        font-size: 24px;
+        color: $lgray;
+        font-family: $ffa;
+        padding-left: 120px;
+        margin-bottom: 30px;
+    }
+    
+    input{
+        vertical-align: middle;
+    }
+    
+    li{
+        margin-bottom: 20px;
+    }
+    
+    .lb_title{
+        width: 3em;
+        text-align: right;
+    }
+    
+    label{
+        font-family: $ffa;
+        font-size: 16px;
+        color: $mgray;
+        margin-right: 5px;
+        display: inline-block;
+        
+    }
+    
+    .lb_text{
+        padding: 0 5px;
+        width: 208px;
+        height: 34px;
+        line-height: 34px;
+        border: 1px solid #dddddd;
+    }
+    
+    .lb_find{
+        color: $lgray;
+        font-size: 12px;
+    }
+    
+    .lb_rememberline{
+        padding-left: 53px;
+        input{
+            vertical-align: middle;
+        }
+        label{
+            font-size:14px;
+        }
+    }
+    
+    .lb_btnline{
+        margin-bottom: 20px;
+        padding-left: 55px;
+        button{
+            width: 220px;
+            font-size: 18px;
+            letter-spacing: 5px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+    .lb_registerline{
+        color: $lgray;
+        font-size: 14px;
+        padding-left: 100px;
+        a{
+            color:$lorange;
+            &:hover{
+                color:$lorange;
+            }
+        }
+    }
+}
+
+*+html .ui-info-loginBox label{
+    margin-right: 0;
+}

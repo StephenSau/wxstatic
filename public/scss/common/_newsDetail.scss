@@ -1,0 +1,44 @@
+@import 'common/variable';
+
+.news_detail{
+    padding-top: 11px;
+    color: $dgray;
+    h1{
+        font-size: 1.125em;
+        
+        margin-bottom: 5px;
+    }
+    .nd_info{
+        font-size: .75em;
+        color: $lgray;
+        margin-bottom: 7px;
+    }
+    
+    .nd_photo{
+        margin-bottom: 15px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .nd_content{
+        img{
+            width: 100%;
+        }
+        strong, b{
+            font-weight: bold;
+        }
+        em, i{
+            font-style: italic;
+        }
+        a{
+            color: $lblue;
+        }
+    }
+    
+    .nd_count{
+        font-size: .75em;
+        color: $lgray;
+        margin: 25px 0;
+    }
+}

@@ -1,0 +1,68 @@
+@import 'common/variable';
+.order-msg{
+  padding:9px 0 7px;
+  background-color:#efb12c;
+  text-align:center;
+  color:#ffffff;
+  font-weight:700;
+  font-size:.75em;
+  line-height:21px;
+}
+
+.list{
+	margin:0 auto;
+	padding:0 10px;
+	max-width:740px;
+
+	li{
+		position:relative;
+		padding:20px 0;
+		border-bottom:2px solid #ccc;
+
+		&.last{
+			border:none;
+		}
+		p{
+			padding-bottom:5px;
+			font-size:1.125em;
+		}
+		span{
+			position:absolute;
+			top:20px;
+			right:0;
+			font-size:1em;
+			color:#db281f;
+			font-weight:700;
+		}
+		.btn-list{
+			padding-top:10px;
+
+			a,button{
+				float:left;
+				width:45%;
+			}
+
+			a{
+				margin-right:10%;
+			}
+		}
+		.btn_success{
+			background-color:#1153a7;
+		}
+	}
+
+	.empty{
+		padding-top:30px;
+		text-align:center;
+		p{
+			padding-bottom:20px;
+		}
+		a{
+			color:#1153a7;
+		}
+	}
+
+}
+#loadingPoint{
+	text-align:center;
+}

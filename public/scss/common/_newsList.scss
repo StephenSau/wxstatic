@@ -1,0 +1,109 @@
+
+
+.news_list{
+    margin-bottom: 16px;
+    li{
+        padding: 15px 0;
+        border-bottom: 1px solid #eeeeee;
+        overflow: hidden;
+    }
+    .nl_photo{
+        float: left;
+        margin-right: 6px;
+        
+    }
+    .nl_content{
+        overflow: hidden;
+        a{
+            color: $dgray;
+        }
+        span{
+            display: block;
+            color: $lgray;
+            font-size: .75em;
+        }
+    }
+}
+
+.loadingPoint{
+    color: $lgray;
+    text-align: center;
+    font-size: .75em;
+}
+
+/*fixnav start*/
+#fixnav{
+    position:fixed;
+    bottom:0;
+    border-top:1px solid $linegray;
+    width:100%;
+    background-color:#ffffff;
+
+    ul{
+        display:-webkit-box;
+        display:-moz-box;
+        width:100%;
+        display:box;
+    }
+
+    li{
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex:1;
+        font-size:.75em;
+        font-weight:700;
+        text-align:center;
+
+        a{
+            display:block;
+            padding:7px 0 5px;
+            color:#ababab;
+        }
+
+        span{
+            display:block;
+            margin:0 auto 7px;
+            width:22px;
+            height:17px;
+            background-repeat:no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position:0 0;
+        }
+
+        .active, &:hover{
+            span{
+                background-position:0 -18px;
+            }
+            a{
+                color:#1153a7;
+            }
+        }
+
+    }
+
+    li:nth-child(1){
+        span{
+            background-image:url("../../public/img/icon_14.png");
+        }
+    }
+
+    li:nth-child(2){
+        span{
+            background-image:url("../../public/img/icon_15.png");
+        }
+    }
+
+    li:nth-child(3){
+        span{
+            background-image:url("../../public/img/icon_16.png");
+        }
+    }
+
+    li:nth-child(4){
+        span{
+            background-image:url("../../public/img/icon_17.png");
+        }
+    }
+}
+/*fixnav end*/

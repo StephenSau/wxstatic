@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>企业服务领航者-壹财税</title>
+    <meta name="keywords" content="..." />
+    <meta name="description" content="..." />
+    <link rel="stylesheet" type="text/css" href="../public/css/orderDetail.css" />
+    <style>
+        body{
+            background-color:#ffffff;
+            position: relative;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            border-spacing: 0;
+            margin: 0 auto;
+        }
+        img{
+            float:left;
+            border:none;
+            width: 100%;
+        }
+        .buttonLine{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            
+        }
+        .buttonLine a{
+            box-shadow: 0 -3px 3px rgba(0, 0, 0, .5);
+            color: #ffffff;
+            height: 44px;
+            display: block;
+            font-size: 1.1875em;
+            line-height: 44px;
+            text-align: center;
+            background-color: #eb9000;
+        }
+
+        
+
+        .notice{
+            position: absolute;
+            top: 86%;
+            width: 100%;
+        }
+
+        .notice_show_btn{
+            display: block;
+            width: 90%;
+            height: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 5%;
+        }
+
+        .notice_show{
+            padding: 0 15%;
+            display: none;
+        }
+
+        .notice_hide{
+            padding: 0 41%;
+        }
+
+        @media (max-width: 320px) {
+            .buttonLine, .notice{
+                margin-left: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <img src="../public/img/topic002001.jpg"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="../public/img/topic002002.jpg"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="../public/img/topic002003.jpg"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="../public/img/topic002004.jpg"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="../public/img/topic002005.jpg"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="../public/img/topic002006.jpg"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="../public/img/topic002007.jpg"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="../public/img/topic002008.jpg"/>
+            </td>
+        </tr>
+    </table>
+    <div class="notice">
+        <p class="notice_show" id="notice_show"><img src="../public/img/topic002009.png"/>
+        <a href="javascript:;" class="notice_show_btn" id="notice_show_btn" onclick="document.getElementById('notice_show').style.display='none';document.getElementById('notice_hide').style.display='block';"></a></p>
+        <p class="notice_hide" id="notice_hide"><img src="../public/img/topic002010.png" onclick="document.getElementById('notice_hide').style.display='none';document.getElementById('notice_show').style.display='block';"/></p>
+    </div>
+    
+    <p class="buttonLine"><a href="#">我要开公司</a></p>
+</body>
+</html>

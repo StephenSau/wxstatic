@@ -1,0 +1,121 @@
+@import 'common/variable';
+
+.shop_success{
+  padding-top: 32px;
+  .os_line1{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .os_line2{
+    margin-bottom: 5px;
+    color: #88b646;
+    font-size:1.25em;
+    font-weight:700;
+    text-align: center;
+  }
+  .os_line3{
+    color: #88b646;
+    font-size:1.25em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .os_line4{
+    color: $dgray;
+    text-align: center;
+    font-size: .8125em;
+    font-weight:700;
+    margin-bottom: 30px;
+  }
+  .os_line5 {
+    padding: 21px 0;
+    background-color:#e2f2ff;
+    color: $dgray;
+    text-align: center;
+    font-size: .75em;
+    font-weight:700;
+    p{
+      padding-bottom:15px;
+    }
+    img{
+      border:1px solid #ddd;
+    }
+  }
+}
+
+/*fixnav start*/
+#fixnav{
+  position:fixed;
+  bottom:0;
+  border-top:1px solid $linegray;
+  width:100%;
+  background-color:#ffffff;
+
+  ul{
+    display:-webkit-box;
+    display:-moz-box;
+    width:100%;
+    display:box;
+  }
+
+  li{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex:1;
+    font-size:.75em;
+    font-weight:700;
+    text-align:center;
+
+    a{
+      display:block;
+      padding:7px 0 5px;
+      color:#ababab;
+    }
+
+    span{
+      display:block;
+      margin:0 auto 7px;
+      width:22px;
+      height:17px;
+      background-repeat:no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position:0 0;
+    }
+
+    .active, &:hover{
+      span{
+        background-position:0 -18px;
+      }
+      a{
+        color:#1153a7;
+      }
+    }
+
+  }
+
+  li:nth-child(1){
+    span{
+      background-image:url("../../public/img/icon_14.png");
+    }
+  }
+
+  li:nth-child(2){
+    span{
+      background-image:url("../../public/img/icon_15.png");
+    }
+  }
+
+  li:nth-child(3){
+    span{
+      background-image:url("../../public/img/icon_16.png");
+    }
+  }
+
+  li:nth-child(4){
+    span{
+      background-image:url("../../public/img/icon_17.png");
+    }
+  }
+}
+/*fixnav end*/

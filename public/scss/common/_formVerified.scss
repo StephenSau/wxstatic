@@ -1,0 +1,33 @@
+form{
+    .form-choice-group{
+        border-bottom: 1px solid transparent;
+    }
+    
+    .valid{
+        border-color: #73A80D!important;
+    }
+    
+    .invalid{
+        border-color: #db281f!important;
+    }
+}
+
+.ui-warn{
+	display: block;
+	background-color: #f7f7f7;
+	color: #db281f;
+	border-radius: 4px;
+	margin-top: 8px;
+	padding: 8px 16px;
+	i{
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		border-radius: 16px;
+		text-align: center;
+		line-height: 16px;
+		background-color: #db281f;
+		color: #ffffff;
+		margin-right: 8px;
+	}
+}

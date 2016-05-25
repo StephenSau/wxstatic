@@ -1,0 +1,63 @@
+@import 'common/variable';
+
+.accounts{
+	h1{
+		font-size: 1.0625em;
+		padding: 10px 0;
+		text-align: center;
+		color: $dgray;
+		font-weight: normal;
+	}
+	.summary{
+		border: 1px solid $linegray;
+		border-top: 2px solid $lblue;
+		border-bottom: none;
+		margin-bottom: 15px;
+		li{
+			border-bottom: 1px solid $linegray;
+			padding: 10px;
+			overflow: hidden;
+			span{
+				float: left;
+				color: $mgray;
+			}
+			em{
+				float: right;
+				color: $dgray;
+				font-weight: bold;
+			}
+		}
+	}
+	.list{
+		width: 100%;
+		border: 1px solid $linegray;
+		border-top-width: 2px;
+		color: $mgray;
+		th,td{
+			padding: 10px;
+			border: 1px solid $linegray;
+			text-align: center;
+		}
+		td{
+			color: $dgray;
+			&:first-child{
+				color: $mgray;
+			}
+			&:last-child{
+				text-align: right;
+			}
+		}
+		th{
+			background-color: #f7f7f7;
+			
+			font-size: .75em;
+			font-weight: noraml;
+		}
+	}
+}
+
+.loadingPoint{
+    color: $lgray;
+    text-align: center;
+    font-size: .75em;
+}

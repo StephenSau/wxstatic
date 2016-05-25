@@ -1,0 +1,142 @@
+@import 'common/variable';
+
+.pBanner{
+	img{
+		width: 100%;
+	}
+}
+
+.topic_content_outer{
+	padding: 14px 10px;
+	
+}
+
+.topic_content{
+	width: 100%;
+	background-color: #fbf4e3;
+	.icon{
+		overflow: hidden;
+	}
+
+	h2{
+		position: relative;
+		margin-bottom: -28px;
+		width: 90px;
+		height: 29px;
+		top: -13px;
+		left: -6px;
+
+	}
+
+	.title2 img{
+		margin: -30px 0 0 0;	
+	}
+
+	.title3 img{
+		margin: -60px 0 0 0;
+	}
+
+	.list1{
+		padding: 20px 0 40px;
+		li{
+			text-align:center;
+			padding: 0 4em 15px;
+			span{
+				color: $mgray;
+				font-size: .9375em;
+			}
+		}
+		.icon{
+			display: block;
+			margin: 0 auto;
+			width: 105px;
+			height: 24px;
+			margin-bottom: 5px;
+		}
+		.line1 img{
+			margin: -90px 0 0 0;
+		}
+		.line2 img{
+			margin: -115px 0 0 0;
+		}
+		.line3 img{
+			margin: -140px 0 0 0;
+		}
+		.line4 img{
+			margin: -165px 0 0 0;
+		}
+	}
+	.list2{
+		padding: 20px 15px 40px;
+		color: $mgray;
+		font-size: .9375em;
+		font-family: $ffa;
+		.icon{
+			display: inline-block;
+			background-position: 0 -340px;
+			width: 12px;
+			height: 12px;
+			margin-right: 10px;
+			img{
+				margin: -190px 0 0 0;
+			}
+			
+		}
+	}
+
+	.list3{
+		padding: 20px 15px 10px;
+		font-size: .8125em;
+		li{
+			padding:  0 0 15px 22px;
+			color: $mgray;
+			position: relative;
+		}
+		.icon{
+			display:block;
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			left: 0;
+			top: 3px;
+		}
+		.line1 img{
+			margin: -190px 0 0 -15px;
+		}
+		.line2 img{
+			margin: -190px 0 0 -30px;
+		}
+		.line3 img{
+			margin: -190px 0 0 -45px;
+		}
+	}
+}
+
+.buttonLine{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+.buttonLine a{
+    box-shadow: 0 -3px 3px rgba(0, 0, 0, .5);
+    color: #ffffff;
+    height: 44px;
+    display: block;
+    font-size: 1.1875em;
+    line-height: 44px;
+    text-align: center;
+    background-color: #eb9000;
+}
+
+.footer{
+	margin-bottom: 47px;
+}
+
+
+@media (min-width: 740px) {
+	.pBanner, .topic_content_outer{
+		width: 740px;
+		margin: 0 auto;
+	}
+}

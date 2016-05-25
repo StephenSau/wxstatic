@@ -1,0 +1,14 @@
+.cframe{
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+@media (max-width: 740px){
+    .cframe{
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        -wekit-box-sizing: border-box;
+        padding:0 10px;
+    }
+}

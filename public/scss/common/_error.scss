@@ -1,0 +1,13 @@
+@import 'common/variable';
+.error{
+    padding-top: 135px;
+    padding-bottom: 200px;
+    text-align: center;
+    img{
+       margin-bottom: 20px; 
+    }
+    .error_text{
+    	color: $lorange;
+    	margin-bottom: 78px;
+    }
+}

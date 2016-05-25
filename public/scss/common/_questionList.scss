@@ -1,0 +1,17 @@
+@import 'common/variable';
+.questionList{
+	margin-bottom: 15px;
+	li{
+		padding: 15px 0;
+		border-bottom: 1px solid $linegray;
+		a{
+			color: $dgray;
+		}
+	}
+}
+
+.loadingPoint{
+    color: $lgray;
+    text-align: center;
+    font-size: .75em;
+}

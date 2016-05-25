@@ -1,0 +1,15 @@
+@import 'common/variable';
+
+
+.return{
+    background-color: #f7f7f7;
+    overflow: hidden;
+    padding: 8px 0 7px;
+    a{
+        font-size: 1.125em;
+        color: $lgray;
+        img{
+           margin-right: 10px; 
+        }
+    }
+}

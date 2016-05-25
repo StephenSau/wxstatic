@@ -1,0 +1,16 @@
+@import 'common/variable';
+.bindingSuccess{
+    padding: 135px 0 160px;
+    text-align: center;
+    img{
+       margin-bottom: 20px; 
+    }
+    p{
+        color: $mgreen;
+        &.info{
+            width: 14em;
+            margin: 0 auto;
+            text-align: left;
+        }
+    }
+}

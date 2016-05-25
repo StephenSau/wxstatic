@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>企业服务领航者-壹财税</title>
+    <meta name="keywords" content="..." />
+    <meta name="description" content="..." />
+    <link rel="stylesheet" type="text/css" href="../public/css/register.css" />
+</head>
+<body>
+    <div class="header">
+       <div class="cframe">
+        <h2><img src="../public/img/logo.png" width="45" alt="壹财税"/></h2>
+        <p>企业服务领航者</p>
+        </div>
+    </div>
+    <h2 class="ptitle">注册用户</h2>
+    <div class="login cframe">
+        
+        <form action="/user/registuser.htm" method="post" name="register" id="register">
+            <ol>
+                <li class="ui-inputLine">
+                    <label class="ui-title" for="name"><em>*</em>手机号码</label>
+                    <input class="ui-text" data-rule="checkTelphone" type="text" name="telphone" id="telphone" placeholder="请填写11位手机号码" maxlength="11" />
+                </li>
+                <li class="ui-inputLine">
+                    <label class="ui-title" for="phone"><em>*</em>密码</label>
+                    <input class="ui-text" data-rule="checkEmpty:请填写密码" type="password" name="password" id="password" placeholder="6-20位字符，不能包含空格"  maxlength="20"/>
+                </li>
+
+                <li class="ui-inputLine ui-col2">
+                    <label class="ui-title" for="phone"><em>*</em>验证码</label>
+                    <input class="ui-text" data-rule="checkEmpty:请填写验证码" type="text" name="phonecode" id="phonecode"  maxlength="4"/><a href="javascript:;" id="getPhoneCodeBtn" class="btn btn_unneed">获取手机验证码</a>
+                </li>
+                
+                <li class="ui-buttonLine">
+                    <button type="submit" class="btn btn_warning">注册</button>
+                    <a href="#" class="btn btn_info">使用已有壹财税账户登录</a>
+                </li>
+            </ol>
+        </form>
+    </div>
+    <p class="footer">© 2015 1caishui.com</p>
+    <div class="mask" style="display:none"></div>
+    <div class="ui_codeBox" id="ui_codeBox">
+    	<div class="ui_codeBox_inner">
+    			<h2>图片验证码</h2>
+    			<ol>
+    				<li class="ui-inputLine">
+                    <input class="ui-text" id="imgCodeText" type="text" maxlength="4"/><a href="javascript:;" class="imgBtn"><img id="imgBtn" src="../public/img/code.png" /></a> 
+                </li>
+    		</ol>
+    		<p class="uiob_btnLine"><a id="checkImgCodeBtn" href="javascript:;">确定</a></p>
+    	</div>
+    </div>
+    <script type="text/javascript" src="../public/js/vendor/ajax.js"></script>
+    <script type="text/javascript" src="../public/js/vendor/dialog.js"></script>
+    <script type="text/javascript" src="../public/js/vendor/formVerified.js"></script>
+    <script type="text/javascript" src="../public/js/register.js"></script>
+</body>
+</html>

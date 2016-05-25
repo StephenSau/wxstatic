@@ -1,0 +1,158 @@
+body{
+	background-color: #ea7b00;
+}
+
+.banner{
+	width: 100%;
+	max-width: 740px;
+	margin: 0 auto -20px;
+	img{
+		width: 100%;
+	}
+}
+
+.container{
+	position: relative;
+	background-color: #ffffff;
+	border-radius: 8px;
+	padding: 20px 10px 20px;
+}
+.btn_unneed{
+  color:#76a31f;
+}
+.serviceLine{
+	color: $mgray;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid $linegray;
+	label{
+		color: $dgray;
+		i{
+			font-size: .8125em;
+		}
+	}
+	&:nth-child(3){
+		margin-bottom: 30px;
+	}
+	p:last-child{
+		padding-left: 1.5em;
+		span{
+			text-decoration: line-through;
+			color: $lgray;
+			display: inline-block;
+			width: 8em;
+			font-size: .75em;
+		}
+		em{
+			color: $morange;
+			font-weight: bold;
+		}
+	}
+}
+
+.phoneLine{
+	margin-bottom: 10px;
+}
+
+.codeLine{
+	overflow: hidden;
+
+	.ui-text{
+		float: left;
+		width: 60%;
+	}
+
+	.btn{
+		float: right;
+		width: 35%;
+		color: $mgreen;
+	}
+}
+
+
+.ui-col2{
+	.ui-text{
+		width:48%;
+		display: inline-block;
+	}
+	.btn{
+		margin-left: 4%;
+		width: 47%;
+		display: inline-block;
+		color: #76a31f;
+	}	
+}
+
+.ui_codeBox{
+	display: none;
+	position: fixed;
+	top: 10px;
+	left: 0px;
+	z-index: 1010;
+	width: 100%;
+}
+
+.ui_codeBox_inner{
+	padding-top: 15px;
+	margin: 10px;
+	border: 1px solid $linegray;
+	background-color: #ffffff;
+	border-radius: 8px;
+	li{
+		padding: 15px 0;
+		margin: 0 15px;
+	}
+	h2{
+		font-size: 1em;
+		text-align: center;
+		color: $lblue;
+		font-weight: normal;
+	}
+	.uiob_btnLine{
+		a{
+			border-top: 1px solid $linegray;
+			width: 100%;
+			display: block;
+			text-align: center;
+			font-size: 1.125em;
+			height: 44px;
+			line-height: 44px;
+			color: $morange;
+		}
+	}
+
+	.ui-text{
+		width: 63%;
+		display: inline-block;
+	}
+	.imgBtn{
+		vertical-align: bottom;
+		border: 1px solid $linegray;
+		border-radius: 4px;
+		margin-left: 4%;
+		width: 30%;
+		padding: 4px 3px;
+		display: inline-block;
+		img{
+			display: block;
+			width: 100%;
+			height: 34px;
+		}	
+	}
+}
+
+.mask{
+    background-color: #000000;
+    opacity: 0.6;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 800px;
+}
+
+.footer{
+	margin-top: 20px;
+	color: #ffffff!important;
+}

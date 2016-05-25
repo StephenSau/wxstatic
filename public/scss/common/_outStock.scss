@@ -1,0 +1,35 @@
+@import 'common/variable';
+.error{
+    padding-top: 135px;
+    padding-bottom: 200px;
+    text-align: center;
+    img{
+       margin-bottom: 20px; 
+    }
+    .error_text{
+    	color: $lorange;
+    	margin-bottom: 78px;
+    }
+}
+
+.out-wrap{
+    padding-top:112px;
+    text-align:center;
+    font-size:20px;
+
+    p{
+        margin:19px 0 47px;
+        color:#666;
+    }
+
+    a{
+        display:inline-block;
+        width:190px;
+        height:53px;
+        background-color:#eb9000;
+        color:#fff;
+        line-height:53px;
+        border-radius:3px;
+    }
+
+}

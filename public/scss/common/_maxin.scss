@@ -1,0 +1,90 @@
+@import 'variable';
+
+@mixin opacity($opacity:1){
+  opacity: $opacity/100;
+  filter: alpha(opacity=$opacity);
+}
+
+@mixin modern{
+    @media all and (min-width: 0px){
+        @content;
+    }
+}
+
+@mixin separate ($line: 1px dashed #ccc, $up: 10px, $down: 10px){
+    border-bottom: $line;
+    padding-bottom: $up;
+    margin-bottom: $down;
+}
+
+
+@mixin button-shadow($value: 0 2px 2px rgba(0,0,0,.3)){
+    -webkit-box-shadow: $value;
+    box-shadow: $value;
+}
+
+@mixin box-center($value: 1200px){
+    width: $value;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin nborder($color:#ddd){
+    border-width: 1px;
+    border-style: solid;
+    border-color: $color;
+}
+
+@mixin text($width: 100px){
+    width: $width;
+    @include nborder;
+    height: 18px;
+    line-height: 18px;
+    padding: 3px 5px;
+}
+
+@mixin ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin title($bottom: 22px, $color: #eef2f6){
+    font-size: 16px;
+    font-family: $ffa;
+    color: #1153a7;
+    padding-bottom: 10px;
+    border-bottom: 4px solid $color;
+    margin-bottom: $bottom;
+}
+
+
+//smallIocn.png sprite
+$sIocnUrl: url('../img/smallIcon.png');
+$sIconType:
+    (0 0) (-20px 0) (-40px 0) (-60px 0) (0 -20px)
+    (-30px -20px) (-80px 0) (-100px 0) (-60px -20px) (-120px 0)
+    (-142px -3px) (-162px -3px) (-184px -5px) (-204px -5px) (-140px -20px)
+    (-160px -20px) (-200px -20px) (-260px 0) (-280px 0) (-220px -20px)
+    (-260px -20px) (-300px 0) (-320px 0) (-280px -20px);
+
+@mixin sIconSprite($type: 1, $width: 20px, $height: 20px){
+    width: $width;
+    height: $height;
+    background-image: $sIocnUrl;
+    background-position: nth($sIconType, $type); 
+};
+
+
+//bigIocn.png sprite
+$bIocnUrl: url('../img/bigIcon.png');
+$bIconType:
+    (0 0) (-60px 0) (-120px 0) (-180px 0) (-240px 0)
+    (-300px 0) (-360px 0) (-430px 0) (-550px 0) (-250px -320px)
+    (-240px -160px) (-360px -160px) (-480px -80px) (-540px -80px);
+@mixin bIconSprite($type: 1, $width: 54px, $height: 54px){
+    width: $width;
+    height: $height;
+    background-image: $bIocnUrl;
+    background-position: nth($bIconType, $type); 
+}

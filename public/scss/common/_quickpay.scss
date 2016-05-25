@@ -1,0 +1,150 @@
+@import 'common/variable';
+
+
+.ui-col2{
+	.ui-text{
+		width:48%;
+		display: inline-block;
+	}
+	.btn{
+		margin-left: 4%;
+		width: 47%;
+		display: inline-block;
+		color: #76a31f;
+	}	
+}
+.ui-inputLine{
+	padding:0 10px;
+}
+
+.ui-title,.text-wrap{
+	float:left;
+}
+.ui-title{
+	width:26%;
+	line-height:43px;
+	text-align:right;
+
+	span{
+		color:#db281f;
+	}
+}
+.text-wrap{
+	margin-left:4%;
+	width:70%;
+}
+.btn_unneed{
+  color:#76a31f;
+}
+.ui_codeBox{
+	display: none;
+	position: fixed;
+	top: 10px;
+	left: 0px;
+	z-index: 1010;
+	width: 100%;
+}
+
+.ui_codeBox_inner{
+	padding-top: 15px;
+	margin: 10px;
+	border: 1px solid $linegray;
+	background-color: #ffffff;
+	border-radius: 8px;
+	li{
+		padding: 15px 0;
+		margin: 0 15px;
+	}
+	h2{
+		font-size: 1em;
+		text-align: center;
+		color: $lblue;
+		font-weight: normal;
+	}
+	.uiob_btnLine{
+		a{
+			border-top: 1px solid $linegray;
+			width: 100%;
+			display: block;
+			text-align: center;
+			font-size: 1.125em;
+			height: 44px;
+			line-height: 44px;
+			color: $morange;
+		}
+	}
+
+	.ui-text{
+		width: 63%;
+		display: inline-block;
+	}
+	.imgBtn{
+		vertical-align: bottom;
+		border: 1px solid $linegray;
+		border-radius: 4px;
+		margin-left: 4%;
+		width: 30%;
+		padding: 4px 3px;
+		display: inline-block;
+		img{
+			display: block;
+			width: 100%;
+			height: 34px;
+		}	
+	}
+}
+
+.mask{
+    background-color: #000000;
+    opacity: 0.6;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 800px;
+}
+.stress-tips{
+	margin-bottom:36px;
+	padding:29px 0 27px;
+	text-align:center;
+	color:$mgray;
+	background-color:#f7f7f7;
+	font-size:16px;
+	line-height:24px;
+}
+
+@media screen and (max-width: 360px){
+	.stress-tips{
+		font-size:14px;
+	}
+}
+@media screen and (max-width: 319px){
+	.stress-tips{
+		font-size:12px;
+	}
+	.ui-title{
+		display:none;
+	}
+	.text-wrap{
+		margin:0;
+		width:100%;
+	}
+}
+
+.btn_success{
+	background-color:#1153a7;
+}
+
+.ui-buttonLine{
+	padding: 0 10px;
+	font-weight:18px;
+	button,a{
+		font-weight:700;
+		float:left;
+		width:45%;
+	}
+	button{
+		float:right;
+	}
+}

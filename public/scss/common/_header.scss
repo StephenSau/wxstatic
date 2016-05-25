@@ -1,0 +1,32 @@
+@import 'common/variable';
+.header{
+    background-color: $lblue;
+    font-size: .75em;
+    padding: 8px 0;
+    overflow: hidden;
+    h2{
+        float: left;
+        height: 15px;
+        line-height: 15px;
+        margin-right: 10px;
+        img{
+            float: left;
+            margin-top:1px;
+        }
+    }
+    p{
+        float: left;
+        color: #ffffff;
+        line-height: 15px;
+    }
+}
+
+.ptitle{
+    font-size: 1em;
+    padding: 10px 0;
+    border-bottom: 1px solid $linegray;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-weight: normal;
+    color: $mgray;
+}

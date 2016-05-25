@@ -1,0 +1,49 @@
+@import "variable";
+@import "maxin";
+
+
+$normalColor: (info: #1153A7,
+        warning: #eb9000, 
+        primary: #db281f,
+        prompt: #629500,
+        unneed: #f7f7f7);
+
+$hoverColor: (info: #0a438b,
+        warning: #ea7f00, 
+        primary: #b90900,
+        prompt: #457a00,
+        unneed: #dddddd);
+
+.btn{
+    color: #ffffff;
+    border:none;
+    text-decoration: none;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 3px;
+    width: 100%;
+    display: block;
+    @include button-shadow;
+}
+
+.btn_unneed{
+    color: $mgray;
+    border: 1px solid $linegray;
+    height: 42px;
+    line-height: 42px;
+    box-shadow:none;
+}
+
+@each $suffix, $color in $normalColor {
+    .btn_#{$suffix} {
+        background-color: $color;
+    }
+}
+
+@each $suffix, $color in $hoverColor {
+    .btn_#{$suffix}:hover {
+        background-color: $color;
+    }
+}

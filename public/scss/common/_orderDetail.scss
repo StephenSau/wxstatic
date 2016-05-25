@@ -1,0 +1,94 @@
+@import 'common/variable';
+
+.order_detail{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    h2{
+        font-size: 1.0625em;
+        color: $lorange;
+        margin-bottom: 15px;
+    }
+    h3{
+        font-size: .75em;
+        background-color: #f7f7f7;
+        border-left: 4px solid $lblue;
+        color: $lblue;
+        padding: 4px 0 4px 5px;
+        margin-bottom: 12px;
+    }
+    h4{
+        color: $mgray;
+        margin-bottom: 12px;
+        font-weight: normal;
+        padding-left: 10px;
+    }
+}
+
+.order_service{
+    
+    
+    ol{
+        overflow: hidden;
+        padding-bottom: 10px;
+        i.icon{
+            float:left;
+            font-family: $ffn;
+            margin-right: 10px;
+            font-size: 24px;
+            color: #eb9000;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border: 5px solid #f2ddbc;
+            border-radius: 50px;
+        }
+        img.icon{
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: none;
+            width: 36px;
+            height: 36px;
+        }
+    }
+    
+    li{
+        float:left;
+        position: relative;
+        margin: 0 25px 10px 20px;
+        &.active{
+            i.icon{
+                border-color: #e9eee0;
+                color: #73a80d;
+            }
+            img.icon{
+                display: block;
+            }
+            >div{
+                border: 2px solid #73a80d;
+                width: 246px;
+                
+            }
+        }
+        div{
+            border-bottom: 4px solid #eb9000;
+            height: 96px;
+            width: 250px;
+            background-color: #f7f7f7;
+            p{
+                overflow: hidden;
+                padding: 25px 18px 0 15px;
+                font-size: 12px;
+                font-family: $ffa;
+                color: $mgray;
+                line-height: 18px;
+            }
+        }
+        
+        
+
+    }
+}

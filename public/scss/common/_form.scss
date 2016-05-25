@@ -1,0 +1,49 @@
+@import 'common/variable';
+
+.ui-tips{
+    background-color: #f7f7f7;
+    color: $lorange;
+    padding: 10px 5px;
+    margin-bottom: 25px;
+}
+
+.ui-inputLine{
+    margin-bottom: 16px;
+}
+
+.ui-buttonLine{
+    margin-top: 30px;
+}
+
+.ui-title{
+    display: block;
+    color: $mgray;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.ui-text{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: $mgray;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid $linegray;
+    height: 43px;
+    line-height: 43px;
+    padding: 0 15px;
+    font-size: 1em;
+}
+
+.ui-check-label{
+    color: $mgray;
+}
+
+.ui-select{
+    width: 48%;
+    height: 43px;
+    color: $mgray;
+    border-radius: 4px;
+    border: 1px solid $linegray;
+    font-size: 1em;
+}

@@ -1,0 +1,11 @@
+@import 'common/variable';
+.bindingOver{
+    padding: 135px 0 200px;
+    text-align: center;
+    img{
+       margin-bottom: 20px; 
+    }
+    p{
+        color: $lorange;
+    }
+}
